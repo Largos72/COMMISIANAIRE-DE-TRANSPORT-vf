@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#142c4b"><title>LOGIFLOW — Transport Management</title>
+  <link rel="stylesheet" href="/assets/style.css?v=20261114-5">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><span class="brand-mark">L</span><span><b>LOGIFLOW</b><small>TRANSPORT MANAGEMENT</small></span></div>
+    <button class="workspace" id="workspace"><span><b id="workspaceTitle">Commissionnaire</b><small id="workspaceSub">Atlas Logistics</small></span><span>⌄</span></button>
+    <div class="nav-caption">ESPACE DE TRAVAIL</div>
+    <nav id="nav"></nav>
+    <div class="side-bottom"><button data-page="settings">⚙　Paramètres</button><button data-page="help">ⓘ　Centre d’aide</button><small>LOGIFLOW © 2026</small></div>
+  </aside>
+  <main class="shell">
+    <header class="topbar"><button class="menu" id="menu">☰</button><span class="top-context" id="context">Espace commissionnaire</span>
+      <label class="global-search"><span>⌕</span><input id="globalSearch" placeholder="Rechercher une expédition, un client…"><kbd>⌘ K</kbd></label>
+      <button class="icon-button" id="notifications" title="Notifications">♧<i></i></button><div class="user" id="user"><b>Amine Benali</b><small>Administrateur</small></div><button class="caret" id="userMenu">⌄</button>
+    </header>
+    <div id="app" class="content"></div>
+  </main>
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast"></div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="/assets/app.js?v=20261114-5"></script>
+</body></html>
